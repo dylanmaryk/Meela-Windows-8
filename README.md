@@ -7,7 +7,3 @@ Improvements to be made (contributions very welcome):
 - Snap view should be better suited to displaying the content at that window size
 - Share target view should be better suited to displaying the content at that window size
 - Graphics should be added/improved
-
-How to set up for use:
-
-YET TO TYPE

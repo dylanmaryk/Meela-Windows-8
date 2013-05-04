@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="83044d3b-5098-4968-ad6c-ecac3a359a05" Publisher="CN=Dylan" Version="1.0.0.0" />
+  <Properties>
+    <DisplayName>Mee.la</DisplayName>
+    <PublisherDisplayName>Code Canopy</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Meela.App">
+      <VisualElements DisplayName="Mee.la" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="Mee.la" ForegroundText="light" BackgroundColor="#E5EEF2">
+        <DefaultTile ShowName="noLogos" WideLogo="Assets\WideLogo.png" ShortName="Meela" />
+        <SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#E5EEF2" />
+      </VisualElements>
+      <Extensions>
+        <Extension Category="windows.shareTarget">
+          <ShareTarget>
+            <DataFormat>Text</DataFormat>
+            <DataFormat>Uri</DataFormat>
+          </ShareTarget>
+        </Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

@@ -1,0 +1,29 @@
+﻿<UserControl
+    x:Class="Meela.MyCharmFlyouts"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Meela"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:cfo="using:CharmFlyoutLibrary"
+    mc:Ignorable="d">
+
+    <Grid>
+        <cfo:CharmFlyout x:Name="aboutSettings" Heading="About" HeadingBackgroundBrush="#025544">
+            <StackPanel>
+                <TextBlock FontSize="16">Mee.la</TextBlock>
+                <TextBlock FontSize="16">Version 1.0</TextBlock>
+                <TextBlock FontSize="16"></TextBlock>
+                <TextBlock FontSize="16">Developer: Dylan Maryk</TextBlock>
+                <TextBlock FontSize="16">Graphics Artist: Sufian Hassan</TextBlock>
+                <TextBlock FontSize="16"></TextBlock>
+                <TextBlock FontSize="16">Contact us:</TextBlock>
+                <HyperlinkButton x:Name="mailHyperlink" Click="mailHyperlink_Click">info@codecanopy.com</HyperlinkButton>
+                <TextBlock FontSize="16">Our website:</TextBlock>
+                <HyperlinkButton x:Name="websiteHyperlink" Click="websiteHyperlink_Click">www.codecanopy.com</HyperlinkButton>
+                <TextBlock FontSize="16"></TextBlock>
+                <TextBlock FontSize="16">Copyright © 2012 Code Canopy</TextBlock>
+            </StackPanel>
+        </cfo:CharmFlyout>
+    </Grid>
+</UserControl>
